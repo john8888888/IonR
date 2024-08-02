@@ -1,0 +1,155 @@
+<html>
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+  <style type="text/css">
+    #formwrap {
+    line-height: 2em;
+    background: #eef;
+    margin: 10px;
+    padding: 10px;
+    height: 500px;
+    text-align: center;
+    }
+    body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    .help {cursor:help; border-bottom: 1px dotted #A9A9A9}
+  </style>
+
+  <script>
+    $(function()
+    {
+    // turn off async JavaScript so we can easily get/set var names
+    $.ajaxSetup({async: false});
+    // get the reference for the current report - TS_result is defined in run verison of this script
+    var reportUrl = '/rundb/api/v1/results/' + TB_result + '/?format=json';
+    var referenceID;
+    $.get( reportUrl, function(data)
+    {
+    var rl = data.log;
+    var reportParams = rl.replace("log.html","ion_params_00.json");
+    $.getJSON( reportParams, function(data)
+    {
+    // from report data get the short reference name
+    referenceID = data.libraryName;
+    });
+    });
+    document.getElementById('referenceid').innerHTML = referenceID;
+    var refBedURL = '/rundb/api/v1/content/?limit=0&format=json&publisher__name=BED&path__startswith=/' + referenceID + '/unmerged/plain/';
+    $.get( refBedURL, function(data)
+    {
+    $.each( data.objects, function(intIndex,result)
+    {
+    var targfile = result.file;
+    var i = targfile.lastIndexOf('/unmerged/plain/');
+    if( i < 0 ) return true;
+	    var selName = targfile.substr(i+16);
+	    var selNameLC = selName.toLowerCase();
+	    if( selName.substr(0,7) == 'example' ) return true;
+	    var j = selNameLC.lastIndexOf('.bed');
+	    if( j > 0 )
+      {
+      selName = selName.substr(0,j);
+      $("#unptargets").append("<option value='" + targfile + "'>" +  selName + "</option>")
+      }
+      });
+      });
+
+      $.fn.serializeObject = function()
+      {
+      var o = {};
+      var a = this.serializeArray();
+      $.each(a,
+      function() {
+      if (o[this.name] != null) {
+      if (!o[this.name].push) {
+      o[this.name] = [o[this.name]];
+      }
+      o[this.name].push(this.value || '');
+      } else {
+      o[this.name] = this.value || '';
+      }
+      });
+      return o;
+      };
+
+      $(function()
+      {
+      $('#postbutton').click(function()
+      {
+      var targetLabel = document.getElementById('unptargets')[document.targetseq.unptargets.selectedIndex].text;
+      document.targetseq.targetseqid.value = targetLabel.replace(/\s/g,'_');
+      obj = $('#targetseq').serializeObject();
+      pluginAPIJSON = { "plugin" : [TB_plugin.fields.name], "pluginconfig" : obj };
+      pluginAPIJSON = JSON.stringify(pluginAPIJSON);
+      pluginURL = "/rundb/api/v1/results/" + TB_result + "/plugin/";
+      $.ajax({
+      type: 'POST',
+      url: pluginURL,
+      async: false,
+      contentType: "application/json; charset=utf-8",
+      success: function(data)
+      {
+      $("#json_result").html('<div style="text-align: center;"><img src="/site_media/jquery/colorbox/images/loading.gif" alt="Running Plugin" style="float:center"></img><p>Running the Plugin... Check FeatureCounter.html in the Plugin Summary</p></div>');
+      setTimeout("parent.$.fn.colorbox.close()",2000);
+      },
+      data: pluginAPIJSON,
+      dataType: "json"
+      });
+      });
+      });
+
+      });
+  </script>
+</head>
+
+<body>
+  <div align="center">
+    <form id="targetseq" name="targetseq" align="center">
+      <h1>Feature Counter</h1>
+      <table cellpadding="5px">
+	<tr>
+	  <td><span class="help" title="The short name of the reference genome (or DNA sequences) that the current report was generated against and to be used for variant calling.">Reference Genome:</span></td>
+	  <td><div id="referenceid"></div></td>
+	</tr>
+	<tr>
+	
+	<tr>
+                        <td><span class="help" title="Mode">Mode:</span></td>
+                        <td>
+                                <select name="mode" id="mode"  style="width:300px">
+                                    <option value="union">union</option>
+                                    <option value="intersection-strict">intersection-strict</option>
+                                    <option value="intersection-nonempty">intersection-nonempty</option>
+                                </select></td></tr>
+
+	 
+	<tr>
+          <td><span class="help"
+                    title="mode ">
+              Feature bed file:</span></td>
+          <td><select id="unptargets" name="unptargets" style="width:300px"></select></td> </tr>
+
+        <tr>
+ 
+      </table>
+      <br/>
+      <div id="json_result">
+	<input id="postbutton" type="submit" value="Submit">
+      </div>
+      <input type="hidden" id="targetseqid" name="targetseqid"/>
+      <br/>
+      <div align="left">
+	<h3>Description and Usage Notes</h3>
+	<p>
+	  Feature Counter plugin counts the number of reads that fall on each feature (line) in the bed file. This plugin uses HTSeq. It further normalizes the counts using RPKM. RPKM is calculated using the following equation RPKM=(10^9*C)/NL <br> where <br> C=counts of reads falling on that feature <br> N=Total number of reads <br> L=length of the feature <br> <br> HT-Seq allows 3 ways of couting if reads fall on to a feature (see diagram below)</p><br><br>
+	<p align="center"><img src="/results/plugins/FeatureCounter/counts_mode.png"></p>
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>
+

@@ -1,0 +1,450 @@
+<html>
+<head>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+
+  <style type="text/css">
+    #formwrap {
+    line-height: 2em;
+    background: #eef;
+    margin: 10px;
+    padding: 10px;
+    height: 500px;
+    text-align: center;
+    }
+    body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    .help {cursor:help; border-bottom: 1px dotted #A9A9A9}
+  </style>
+
+  <script>
+    $(function()
+    {
+   
+    function alearUser(msg) {
+      alert(msg);
+    }
+
+    // uncheck barcoded targets option (allows value to be set consisently for checked state)
+    $('#barcodebeds').attr('checked',false);
+    $('.bcbed-shy').hide();
+
+
+    // turn off async JavaScript so we can easily get/set var names
+    $.ajaxSetup({async: false});
+    // get the reference for the current report - TS_result is defined in run verison of this script
+    //var reportUrl = '/rundb/api/v1/results/' + TB_result + '/?format=json';
+    //var referenceID;
+    var pluginOutDir;
+    //$.get( reportUrl, function(data)
+    //{
+    //var rl = data.log;
+    //var reportParams = rl.replace("log.html","ion_params_00.json");
+    //pluginOutDir = data.filesystempath + '/plugin_out/';
+    //$.getJSON( reportParams, function(data)
+    //{
+    // from report data get the short reference name
+    //referenceID = data.libraryName;
+    //});
+    //});
+    //document.getElementById('referenceid').innerHTML = referenceID;
+
+
+    var reportUrl = '/rundb/api/v1/results/' + TB_result  + '/?format=json&noplugin=True';
+    var referenceID;
+    var experimentUrl;
+    var analysisUrl;
+    $.get( reportUrl, function(data)
+    {
+     analysisUrl = data.reportLink;
+     experimentUrl = data.experiment;
+     referenceID = data.reference;
+    });
+    document.getElementById('referenceid').innerHTML = referenceID;
+    pluginOutDir = analysisUrl;
+
+    // attempt to get Plan details for autosetting of GUIs
+    var planLibType = "";
+    var planBedFile = "";
+    if( experimentUrl != undefined && experimentUrl != null && experimentUrl != "" ) {
+      var planUrl;
+      $.get( experimentUrl+"?format=json", function(data) { planUrl = data.plan; } );
+      if( planUrl != undefined && planUrl != null && planUrl != "" ) {
+        $.get( planUrl+"?format=json", function(data) {
+          planLibType = data.runType;
+          planBedFile = data.bedfile;
+        });
+      }
+    }
+
+    //get previous same-name plugin output number
+    var numberUrl = '/rundb/api/v1/pluginresult/?format=json&result=' + TB_result  + '&plugin_name=' + TB_plugin.fields.name;
+    var reportNumber;
+    $.get( numberUrl, function(data)
+    {
+      reportNumber = data.objects[0].id;
+    });
+
+
+    document.getElementById('report').value = TB_result;
+    document.getElementById('number').value = reportNumber;
+
+    function addBamSelection(dir) {
+      var getBamListCmd = '/pluginMedia/AmpliconStats/getTargets.php?ext=bam&dir=';
+      $.getJSON( getBamListCmd+dir, function(data) {
+        $.each( data, function( intIndex, objValue ) {
+          var j = objValue.lastIndexOf('.bam')
+          if( j > 0 )
+          {
+            var targfile = dir+'/'+objValue
+            var targ = objValue.substring(0,j)
+            $("#mergedbam").append("<option value='" + targfile + "'>" +  targ + "</option>")
+          }
+        });
+      });
+    }
+
+    addBamSelection(pluginOutDir+'combineBarcodes_out');
+    addBamSelection(pluginOutDir+'combineAlignments_out');
+    addBamSelection('/results/imported/alignment/'+referenceID);
+
+
+    //only populate multibed for hg19
+    var populateBarcodeTargets = 0;
+    var hideMappedBedOption = false; // (referenceID != "hg19");
+    if( hideMappedBedOption ) {
+    //if( referenceID == "" ) {
+      $('#multibed').hide();
+    } else {
+      // check/get barcodes
+      var barcodeUrl = analysisUrl + 'barcodeList.txt';
+      $.get( barcodeUrl, function(mem) {
+        //get file content and split
+        var lines = mem.split("\n");
+        $.each(lines, function(n,row) {
+          var fields = $.trim(row).split(',');
+          if( fields[0].substr(0,7) == "barcode" ) {
+            $("#barcodeids").append("<option value='" + fields[1] + "'>" +  fields[1] + "</option>");
+            ++populateBarcodeTargets;
+          }
+        });
+        //check how many bc target populated
+        if( populateBarcodeTargets < 2 ) {
+          $('#multibed').hide();
+        } else {
+          // sort the list (for old reports)
+          var lst = $('#barcodeids option');
+          lst.sort(function(a,b) {
+            if( a.text > b.text ) return 1;
+            if( a.text < b.text ) return -1;
+            return 0
+          });
+          $("#barcodeids").empty().append(lst);
+        }
+
+   
+
+      }).error(function() {
+        $('#multibed').hide();
+      });
+    }
+
+    var refBedURL = '/rundb/api/v1/content/?limit=0&format=json&publisher__name=BED&path__startswith=/' + referenceID + '/unmerged/detail/';
+
+    $.get( refBedURL, function(data)
+    {
+    $.each( data.objects, function(intIndex,result)
+    {
+    var targfile = result.file;
+    var i = targfile.lastIndexOf('/unmerged/detail/');
+    if( i < 0 ) return true;
+	    //var selName = targfile.substr(i+16);
+	    var selName = targfile.substr(i+17);
+	    var selNameLC = selName.toLowerCase();
+	    if( selName.substr(0,7) == 'example' ) return true;
+	    var j = selNameLC.lastIndexOf('.bed');
+	    if( j > 0 )
+      {
+
+
+      //sort bed files
+      selName = selName.substr(0,j);
+      $("#unptargets").append("<option value='" + targfile + "'>" +  selName + "</option>");
+       //check if barcode populated
+       if( populateBarcodeTargets > 0 ) {
+          $("#barcodetargets").append("<option value='" + targfile + "'>" +  selName + "</option>");
+        }
+       
+       var lst = $('#unptargets option');
+       lst.sort(function(a,b){
+	    if( a.text > b.text ) return 1;
+            if( a.text < b.text ) return -1;
+            return 0
+	});
+       $('#unptargets').empty().append(lst); 
+
+       if( populateBarcodeTargets > 0 ) {
+         var lst1 = $('#barcodetargets option');
+         lst1.sort(function(a,b){
+            if( a.text > b.text ) return 1;
+            if( a.text < b.text ) return -1;
+            return 0
+          });
+         $('#barcodetargets').empty().append(lst1);
+
+       }
+
+
+       if( planBedFile != "" ) {
+         $("#unptargets").val(planBedFile);
+         if( populateBarcodeTargets > 0 ) {
+           $("#barcodetargets").val(planBedFile);
+         }
+       }
+
+
+      }
+      });
+      });
+
+
+
+    //when library type changes, hide/show option boxes accordingly
+    //take this out, since no library type in Ampstats
+    //$("#librarytype").change(function() {
+
+    //});
+
+    $('#barcodebeds').change(function() {
+      if( $(this).attr("checked") ) {
+        $('.bcbed-shy').show();
+      } else {
+        $('.bcbed-shy').hide();
+      }
+    });
+
+
+   //edit barcodes
+    $('#addbcbutton').click(function() {
+      var bcID = $('#barcodeids option:selected').text();
+      var trgID = $('#barcodetargets option:selected').text();
+      var box = $("#bctextarea");
+      // clean current input by removing duplicates and blank lines
+      var lines = box.val().split("\n");
+      var text = "";
+      $.each(lines, function(n,row) {
+        var fields = $.trim(row).split(/\s+/);
+        if( fields.length >= 2 && fields[0] != "" && fields[0] != bcID ) {
+          text += fields[0]+'\t'+fields[1]+'\n';
+        }
+      });
+      box.val(text+bcID+'\t'+trgID+'\n');
+      var bcIndex = document.ampliconstats.barcodeids.selectedIndex + 1;
+      var numOptions = $('#barcodeids option').size();
+      if( bcIndex >= numOptions ) bcIndex = 0;
+      $('#barcodeids option')[bcIndex].selected = true;
+    });
+
+    // Check (user) NPVs are correctly formated and available
+    // Return a compressed list of mappings or error message "Error at line ..."
+    function checkBarcodeTargets(txtList) {
+      var lines = txtList.split("\n");
+      var text = "";
+      $.each(lines, function(n,row) {
+        var fields = $.trim(row).split(/\s+/);
+        if( fields.length == 1 && fields[0] == "" ) {
+          return true;  // blank lines ok
+        } else if( fields.length != 2 || fields[1] == "" ) {
+          text = "Error at line "+n+": Invalid number of fields. Must be '<barcode> <targets>'.";
+          return false;
+        } else if( $('#barcodeids option[value='+fields[0]+']').length == 0 ) {
+          text = "Error at line "+n+": Barcode ID "+fields[0]+" is unavailable to this run analysis.";
+          return false;
+        }
+        var trgIndex = 0;
+        var inList = false;
+        $('#barcodetargets option').each(function() {
+          if( this.text == fields[1] ) {
+            inList = true;
+            return false;
+          }
+          ++trgIndex;
+        });
+        if( !inList ) {
+          text = "Error at line "+n+": Target Regions "+fields[1]+" is unavailable to this reference.";
+          return false;
+        }
+        // collect the actual file path to the bed file
+        text += fields[0]+'='+document.getElementById('barcodetargets')[trgIndex].value+';';
+      });
+      return text;
+    }
+
+
+
+
+      $.fn.serializeObject = function()
+      {
+      var o = {};
+      var a = this.serializeArray();
+      $.each(a,
+      function() {
+      if (o[this.name] != null) {
+      if (!o[this.name].push) {
+      o[this.name] = [o[this.name]];
+      }
+      o[this.name].push(this.value || '');
+      } else {
+      o[this.name] = this.value || '';
+      }
+      });
+      return o;
+      };
+
+      $(function()
+      {
+	  $('#postbutton').click(function()
+      {
+
+      var useBcTargets = $('#barcodebeds').attr("checked");
+      var bcTargetList = "";
+      if( useBcTargets ) {
+        bcTargetList = checkBarcodeTargets( $("#bctextarea").val() );
+        if( bcTargetList == "" ) {
+          var msg = "Barcoded Targets was specified but no mappings were defined.";
+          msg += "\n\nDo you wish to continue?";
+          if( !confirm(msg) ) return false;
+        } else if( bcTargetList.substr(0,5) == "Error" ) {
+          alert("Barcode target mapping is invalid.\n"+bcTargetList);
+          return false;
+        }
+      }
+
+
+      document.ampliconstats.mergedbam_id.value = document.getElementById('mergedbam')[document.ampliconstats.mergedbam.selectedIndex].text;
+
+      document.ampliconstats.analysis_type.value = document.getElementById('analysistype')[document.ampliconstats.analysistype.selectedIndex].text;
+
+
+      document.ampliconstats.offtarget_analysis.value = document.getElementById('offtargetanalysis')[document.ampliconstats.offtargetanalysis.selectedIndex].text;
+
+      var targetLabel = document.getElementById('unptargets')[document.ampliconstats.unptargets.selectedIndex].text;
+      document.ampliconstats.targetseqid.value = targetLabel.replace(/\s/g,'_');
+      //barcode population
+      document.ampliconstats.barcodetargetregions.value = bcTargetList;
+
+      obj = $('#ampliconstats').serializeObject();
+      pluginAPIJSON = { "plugin" : [TB_plugin.fields.name], "pluginconfig" : obj };
+      pluginAPIJSON = JSON.stringify(pluginAPIJSON);
+      pluginURL = "/rundb/api/v1/results/" + TB_result + "/plugin/";
+      $.ajax({
+      type: 'POST',
+      url: pluginURL,
+      async: false,
+      contentType: "application/json; charset=utf-8",
+      success: function(data)
+      {
+      $("#json_result").html('<div style="text-align: center;"><img src="/site_media/jquery/colorbox/images/loading.gif" alt="Running Plugin" style="float:center"></img><p>Running the Plugin... Check AmpliconStats.html in the Plugin Summary</p></div>');
+      setTimeout("parent.$.fn.colorbox.close()",2000);
+      },
+      data: pluginAPIJSON,
+      dataType: "json"
+      });
+      });
+      });
+
+      });
+  </script>
+</head>
+
+<body>
+  <div align="center">
+    <form id="ampliconstats" name="ampliconstats" align="center">
+      <h1>AmpliconStats Plugin</h1>
+      <table cellpadding="5px">
+	<tr>
+	  <td><span class="help" title="The short name of the reference genome (or DNA sequences) that the current report was generated against and to be used for variant calling.">Reference Genome:</span></td>
+	  <td><div id="referenceid"></div></td>
+	</tr>
+	<tr>
+	  <td><span class="help"
+		    title="Select the read alignments you wish to analyze. If the combineAlignments plugin has been run for this report then the resulting combined aligmnents will be listed and available for selection. (Additonal imported alignments may also be listed here if uploaded to your server by an administrator.) Otherwise the only option is 'Current Report'.">
+	      Aligned Reads:</span></td>
+	  <td><select id="mergedbam" name="mergedbam"><option value="">Current Report</option></select></td> 
+        </tr>
+
+	<tr>
+	  <td><span class="help" title="Resume analysis will use previous results; while restart analysis will start from the beginning.">Resume/Restart Analysis:</span></td>
+	  <td><select id="analysistype" name="analysistype">
+	      <option value="">Resume</option>
+	      <option value="">Restart</option>
+	  </select></td> 
+	</tr>
+
+	<tr>
+	  <td><span class="help" title="Off-target analysis is off by default. If it's desired, please turn it on.">Off-Target Analysis:</span></td>
+	  <td><select id="offtargetanalysis" name="offtargetanalysis">
+	      <option value="">Off</option>
+	      <option value="">On</option>
+	  </select></td> 
+	</tr>
+
+	<tr>
+	  <td><span class="help"
+		    title="Select the bed file matching your amplicons. See Description and Notes below.">
+	      Amplicon bed file:</span></td>
+	  <td><select id="unptargets" name="unptargets" style="width:300px"></select></td> </tr>
+
+	<tr>
+	
+
+	<tr id="multibed">
+	  <td><span class="help"
+		    title="Assign target regions based on assigned barcodes.">
+	      Barcoded Targets:</span></td>
+	  <td><input type="checkbox" id="barcodebeds" name="barcodebeds" checked="checked" value="Yes" style="float:left"/>
+	    <div class="bcbed-shy" style="margin-left:25px">
+              Use text box to specify barcodes to amplicon target regions mapping.<br/>
+              Hint: Use the 'Add' button and barcode/target selectors for initial set up.<br/>
+              Copy the text generated and then use copy/paste for quick entry next time.<br/></div>
+	    <div class="bcbed-shy">
+              <input id="addbcbutton" type="button" value="Add" style="font-size:13px">
+              <select id="barcodeids" name="barcodeids" style="font-size:13px"></select>
+              <select id="barcodetargets" name="barcodetargets" style="font-size:13px"></select>
+	    </div>
+	    <div class="bcbed-shy">
+              <textarea id="bctextarea" rows=17 cols="60" style="font-size:13px;border:5px double #C0C0C0"></textarea>
+	    </div>
+	    <div class="bcbed-shy" style="font-style:italic;max-width:540px">
+              Un-assigned barcodes will use the Targeted Regions selected when the Submit button is clicked.
+              (Set to 'None' to ignore un-assigned barcodes.)</div>
+	  </td>
+	</tr>
+
+
+	  
+      </table>
+      <br/>
+      <div id="json_result">
+	<input id="postbutton" type="submit" value="Submit">
+      </div>
+      <input type="hidden" id="targetseqid" name="targetseqid"/>
+      <input type="hidden" id="mergedbam_id" name="mergedbam_id"/>
+      <input type="hidden" id="analysis_type" name="analysis_type"/>
+      <input type="hidden" id="offtarget_analysis" name="offtarget_analysis"/>
+      <input type="hidden" id="report" name="report"/>
+      <input type="hidden" id="number" name="number"/>
+      <input type="hidden" id="barcodetargetregions" name="barcodetargetregions" value=""/>
+      <br/>
+      <div align="left">
+	<h3>Description and Usage Notes</h3>
+	<p>
+	  Plugin AmpliconStats is modified from plugin ampliconGeneralAnalysis, but takes user-specified bed file instead of the whole reference. The plugin can run automatically if bed file is pre-defined in run planning page and the auto-run option is checked in plugin setting page. Users can manually run the plugin too. You need select corresponding bed file correctly to ensure accurate analysis. Usually the bed file has a similar name, if not the same name, of your amplicon pool, sometimes with ampl_ at the beginning, but not all the time. If Resume option is selected, by default, the plugin will search previous analysis and use it, if found. If Restart option is selected, the plugin will re-run the analysis no matter if previous results exist or not.</p>
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>
+

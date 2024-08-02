@@ -1,0 +1,55 @@
+Percent greater than 0.01 mean reads per base
+Percent greater than 0.1 mean reads per base
+Percent greater than 0.2 mean reads per base
+Percent no strand bias of all bases
+Percent no strand bias of all Amps 40~60%
+Percent no strand bias of all Amps 30-70%
+Percent no strand bias of all Amps 30-70% >100 reads
+Per base accuracy
+Percent of total reads mapped to hg19
+Percent wells with read
+Number of total reads
+Number of mapped reads
+Number of targets
+Number of reads on target
+Percent all reads on target
+Percent mapped reads on target
+Percent reads off target
+Percent reads unmapped
+Bases in targeted reference
+Bases covered (at least 1x)
+Total base reads on target
+Average base coverage depth
+Maximum base read depth
+Average base read depth
+Std.Dev base read depth
+Target coverage at 1x
+Target coverage at 10x
+Target coverage at 20x
+Target coverage at 100x
+Target coverage at 200x
+Target coverage at 500x
+Target coverage at 1x - norm 100
+Target coverage at 10x - norm 100
+Target coverage at 20x - norm 100
+Target coverage at 100x - norm 100
+Target coverage at 200x - norm 100
+Target coverage at 500x - norm 100
+Percent end to end read of on target reads
+Percent forward end to end read of on target reads
+Percent reverse end to end read of on target reads
+Number HSM Loci >500 Reads of Priority 1 design
+Number HSM Loci >500 Reads of Priority 9 design
+Number of read with length <= 10
+Number of read with length > 10 and length <= 40
+Number of read with length > 40
+Conversion rate at 0.2*Mean
+Conversion rate at 0.01*Mean
+Base number with biased coverage (both strands >20x and one strand <3x)
+Base percent with biased coverage (both strands >20x and one strand <3x)
+Read number with <4 map quality
+Read percentage with <4 map quality
+Number of read starting >10bp from start
+Percent of read starting >10bp from start
+Number of read starting ok (within 5bp) but ending early
+Percent of read starting ok (within 5bp) but ending early

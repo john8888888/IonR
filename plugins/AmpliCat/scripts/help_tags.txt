@@ -1,0 +1,129 @@
+@All Reads
+All reads mapped to the reference.
+
+@Filtered Reads
+Uniquely mapped and/or sampled non-duplicate.
+
+@Uniquely Mapped Reads
+Reads that are not equivalently mapped to two places on the genome.
+
+@Non-duplicate Reads
+Reads that are not marked as a (pcr) duplicate after alignment.
+
+@Uniquely Mapped Non-duplicate Reads
+Reads that are not equivalently mapped to two places on the genome nor marked as a (pcr) duplicate after alignment.
+
+@Number of mapped reads
+Total number of reads mapped to the reference.
+
+@Number of reads on target
+Total number of filtered reads mapped to any targeted region of the reference. A read is considered to be on target
+if at least one aligned base overlaps a target region.
+If no target regions (file) was specified this value will be the percentage of reads passing uniquely mapped
+and/or non-duplicate filters, or 100% if no filters where specified.
+
+@Percent reads on target
+The percentage of filtered reads mapped to any targeted region relative to all reads mapped to the reference.
+A read is considered on target if at least one aligned base overlaps at least one target region.
+If no target regions (file) was specified this value will be the percentage of reads passing uniquely mapped
+and/or non-duplicate filters, or 100% if no filters where specified.
+
+@Percent sample tracking reads
+The percentage of filtered reads mapped to any targeted region used for sample identification.
+Note: It is assumed that these regions are distinct from the actual target regions under investigation, i.e.
+there is no overlap or other ambiguiy of any reads be misassigned to a sample identification target.
+
+@Percent reads on padded target
+The percentage of filtered reads mapped to any padded targeted region relative to all reads mapped to the reference.
+A read is considered on target if at least one aligned base overlaps at least one padded target region.
+This typically includes reads of probe-enriched DNA fragments that overlapped a target region but were only
+sequenced over bases flanking that region.
+
+@Targets analyzed
+The number of amplicons targets analyzed.
+Reads are assigned to particular targets, based on read start and maximum sequence overlap where amplicion insert regions overlap.
+
+@Isolated targets analyzed
+The number of isolated (non-overlapping) amplicons targets analyzed.
+Reads are more likely to be unabigously assigned to the correct targets where overlapping amplicons are ignorred.
+
+@Total assigned reads
+The total number of reads assigned to a specific target region (amplicon).
+Note that a read may overlap more than one region, in which case it is alignment of the read starting is considered against the
+amplicon primer position on the corresponding reference strand. If the read does not align to a specific amplicon this way the
+read is assigned to whichever region has the most overlap with the aligned plus soft-clipped length of the read. Should a read
+equally overlap multiple amplicon targets then the target that has the highest (most 3') starting location is selected.
+
+@Non-outer assigned reads
+Number of assigned reads that may be counted as a true amplicon target read.
+These are reads that start within 30 bases of the outside of the ends of the inserts.
+Reads that start beyond these locations are catagorized as 'outer-primed' reads.
+
+@Valid assigned reads
+Percent of assigned reads that may be counted as a true amplicon target read.
+These are reads that start within 30 bases of the outside of the ends of the inserts.
+Reads that start beyond these locations are catagorized as 'outer-primed' reads.
+
+@Failing amplicons
+The percent of amplicons that had fewer than 20 valid assigned reads.
+(Most other amplicon read coverage statistics apply to amplicons having at least 20 valid assigned reads.)
+
+@Outer-primed amplicons
+The percentage of amplicons that had at least 20% reads that started or ended outside of ends of their insert
+regions, expanded by 30 bases to account for (un)trimmed primers. Such reads to not count as 'valid' assigned
+reads, although they are typically counted towards coverage in other reports.
+
+@Non-uniquely read amplicons
+The percentage of amplicons that had at least 20% valid assigned reads that were denoted as non-unique; specifically those
+with a SAM MAPQ score of 0, indicating that the read could have equally been mapped to a repeated template
+in the reference.
+
+@Low-quality read amplicons
+The percentage of amplicons that had at least 20% valid assigned reads that had SAM MAPQ scores of <= 10.
+These are typically reads that could have been mapped to near repeated region(s) of the reference (anchored by only one or a
+few specific bases) or may have alternative alignments to the reference.
+
+@High strand bias amplicons
+The percentage of amplicons that had at least 20 valid assigned reads and the percentage of forward or reverse strand
+valid assigned reads was lower than 20%.
+
+@Low read-through amplicons
+The percentage of amplicons that had at least 20 valid assigned reads, a forward or reverse strand read bias that was not
+less than 30% and a sum of average forward and reverse target coverage of less than 120%. These are ampicons
+where relatively few reads are covering the amplicon insert in either direction.
+
+@Poor read-through amplicons
+The percentage of amplicons that had at least 20 valid assigned reads, no strand bias (forward or reverse valid assigned reads
+not less than 40% of the total), a sum of average forward and reverse target coverage of less than 120% and the percentage of
+amplicon false primed reads below 20%. These are amplicon that probably had (a systematic) sequencing error.
+
+@Short read amplicons
+The percentage of amplicons that had at least 20% of their valid assigned reads that were short by at least 5
+bases at one end of target and were not considered as likely to be produced as a result of false priming.
+(These are reads that are most likely short due to quality trimming.)
+
+@False primed amplicons
+The percentage of amplicons that had at least 20% of their valid assigned reads matched the criteria for probable
+false priming. These are amplicon reads that start late into the insert or have a reverse primer identified indicating the
+read is significantly shorter than the target.
+
+@Primer-dimer amplicons
+The percentage of amplicons that had at least 20% reads that were short (<=50b) and were aligned to positions
+within 20 bases of either end of the amplicon insert. These reads are a subset of reads that are considered to be
+false primed.
+
+@Short reads
+The percentage of all valid assigned reads that aligned at least 5 bases short of either end of the target.
+The 5' read end used for this calculation is taken as the aligned end plus soft-clip length. This number includes
+reads supposed to be produced by false priming but does not consider those considered to be outer-primed, i.e.
+that extend more than 30 bases beyond the either end of the target.
+
+@Premature attenuated reads
+The percentage of reads that might be considered to sequenced to be shorter than the actual templates present in the library.
+These are reads that were short but did not apear to be false primed (or outer primed).
+
+@False primed reads
+The percentage of all valid assigned reads that are supposed to be false primed. These are reads that either start late,
+relative to the primer location and read orientation, or that have a reverse primer identified indicating a read significantly shorter than
+the target. It does not include assigned reads that extend more than 30 bases beyond the either end of the target.
+

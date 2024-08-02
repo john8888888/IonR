@@ -1,0 +1,25 @@
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                    $("table#metrics_tab tbody tr:odd").css("background-color", "#E1EFFA");
+                    $("button#export").click(function() {
+                       var datArr = new Array();
+                       $("table#metrics_tab tr").each(function(index1) {
+                              datArr[index1] = new Array();
+                	      $(this).children("td,th").each(function(index2) {
+	                	  var text = $(this).text();
+		                  text = text.replace(/,/g,"").replace(/[^\w\s\d.]/,"");
+                		  datArr[index1][index2] = text;
+	                  });
+                	});
+                        var datstr = "";
+                    	var len = datArr.length;
+    	                for( var i=0; i<len; ++i ) {
+                  	      datstr += datArr[i].join(",");
+                	      datstr += "\n";
+            	        }
+                    	$("input#exportdata").val(datstr);
+                    	$("form#exportform").submit();
+                     });
+                  });
+                </script>
+        

@@ -1,0 +1,459 @@
+D /FeatureCounter
+F b8a79e80ce3e2654b6309dfeab869f6b61e9fc23f5d460c59f9d8b1a5bfb34a7 1336662624 30246 counts_mode.png
+F 3d0f18b853c55d9779ddc97d365c6c49a01d8a9f886d36a7835298c62ba1f069 1337026560 5471 instance.html
+X a2130827c2a34a2102c373e1f658aac34655a59d3eeafd4a34de8998361f3b0c 1339177990 6085 launch.sh
+F d08e33dff2ca7f7a3b6d7528c77c79c710e4eb38f32f4821030f8f0ab112a58e 1337111320 91 package.json
+F b9324e72f3e9eb706e4892e00188a9b8b086b6493f6fa01ca280a15c2ebf30b3 1336749082 6524 template.html
+D /FeatureCounter/.svn
+F ef8f758dd93078d4ce28775a599717659b51f2e35d75c4a0b07af425b2487ff2 1339161678 704 all-wcprops
+F af0a651b7141f8e38d4725537434e3f671bcda4f756cce0e2eb544117bcb3db1 1339161678 1158 entries
+D /FeatureCounter/.svn/prop-base
+F ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02 1337178304 53 counts_mode.png.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178304 30 launch.sh.svn-base
+D /FeatureCounter/.svn/props
+D /FeatureCounter/.svn/text-base
+F b8a79e80ce3e2654b6309dfeab869f6b61e9fc23f5d460c59f9d8b1a5bfb34a7 1337178336 30246 counts_mode.png.svn-base
+F 3d0f18b853c55d9779ddc97d365c6c49a01d8a9f886d36a7835298c62ba1f069 1337178341 5471 instance.html.svn-base
+F eb5e03a2203b5fd8367cb6d525a7f9e62b22cb9852975d4efbfe97df99a0197a 1339161677 6085 launch.sh.svn-base
+F d08e33dff2ca7f7a3b6d7528c77c79c710e4eb38f32f4821030f8f0ab112a58e 1337178343 91 package.json.svn-base
+F b9324e72f3e9eb706e4892e00188a9b8b086b6493f6fa01ca280a15c2ebf30b3 1337178342 6524 template.html.svn-base
+D /FeatureCounter/.svn/tmp
+D /FeatureCounter/.svn/tmp/prop-base
+D /FeatureCounter/.svn/tmp/props
+D /FeatureCounter/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3
+F 8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903 1308733385 35147 LICENSE
+F 6d58186f7baa888d74f382d5bc2e0d6594828a73cd7be3bb6baf5e26ad2446ee 1308733385 89 MANIFEST.in
+F a56f147e0eb2fa08b66160e9ee796a14d8100ff088e6517645691d28779b2d48 1316091662 710 PKG-INFO
+F aea90dd7326a5e320894ea1e49858dbf0d7943fe7e934d77999d094fc2584892 1308733385 72 README
+F 2fb1cb2c3e9e6e529d1c8c83caeb6dc095c256d8a6ff7d86053d694d1dc3521b 1316091599 8 VERSION
+X 03238ee8a7865c4af245f312e878539139e5258fe759ea5c639cc27477db2561 1308733385 107 build_it
+X ce8aa26b6b9068e3bb754b98eca7e56f8fa2538e5437ffd8311a9a17ae63119f 1308733385 73 clean
+F 063d04b462ef73e9d86e0b0ae49c4321b51984444a5a2a90aece1e0082b488ee 1316091662 59 setup.cfg
+F 9a23e74d006ed43853a1899239b8ab751973e94d1bca3d370f686d142dfcc2a2 1308733385 2424 setup.py
+D /FeatureCounter/HTSeq-0.5.3p3/.svn
+F a739d38ca323cbc1da875b110b5620743732ffb2ceb3233839e49da1de3e515c 1338909803 1375 all-wcprops
+F 57973eba0be954ef38dfb57fcdb586648a534c3b27964025169fe8ddfda6596f 1338909803 32 dir-prop-base
+F bf1ec2a583ba98a887916806c925cd19cd4a6bdba0da8bc3dbcd3b019f5cb2b3 1338909845 2034 entries
+D /FeatureCounter/HTSeq-0.5.3p3/.svn/prop-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 build_it.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 clean.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 launch.sh.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/.svn/text-base
+F 8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903 1337178336 35147 LICENSE.svn-base
+F 6d58186f7baa888d74f382d5bc2e0d6594828a73cd7be3bb6baf5e26ad2446ee 1337178336 89 MANIFEST.in.svn-base
+F a56f147e0eb2fa08b66160e9ee796a14d8100ff088e6517645691d28779b2d48 1337178335 710 PKG-INFO.svn-base
+F aea90dd7326a5e320894ea1e49858dbf0d7943fe7e934d77999d094fc2584892 1337178340 72 README.svn-base
+F 2fb1cb2c3e9e6e529d1c8c83caeb6dc095c256d8a6ff7d86053d694d1dc3521b 1337178339 8 VERSION.svn-base
+F 03238ee8a7865c4af245f312e878539139e5258fe759ea5c639cc27477db2561 1337178342 107 build_it.svn-base
+F ce8aa26b6b9068e3bb754b98eca7e56f8fa2538e5437ffd8311a9a17ae63119f 1337178341 73 clean.svn-base
+F e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 1337178338 0 launch.sh.svn-base
+F 063d04b462ef73e9d86e0b0ae49c4321b51984444a5a2a90aece1e0082b488ee 1337178340 59 setup.cfg.svn-base
+F 9a23e74d006ed43853a1899239b8ab751973e94d1bca3d370f686d142dfcc2a2 1337178339 2424 setup.py.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq
+F e6c65aeeb8f7cefa2715ec85a6879a51f7de859d31a608c106e64c01254222ed 1308733479 25100 StepVector.py
+F 3ee20253c0eaece1e5da00de8f1f4da971e7ab4965a169ee07cdd6762cd4b609 1308733312 1429 _HTSeq_internal.py
+F f7da6bfbc272aec4b2da9ef42259228e1c2a4289f3fb7924f99f6cb3a9367345 1310737436 28377 __init__.py
+F 309c12d8247b74c4b08e39c893fc85dfd66d775c69852a6e62b88739639a5d70 1316091654 24 _version.py
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/.svn
+F c1e22e3e29fa22cd9d37b56c2a7c98a9cefd6d8acc2b6ac385f5ed5b5b77af4f 1337178345 689 all-wcprops
+F fa0b6224e81caf3d36db2a424e1b8b6a347a4327aac0eb705d511c93f4278fb4 1338909845 952 entries
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/.svn/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/.svn/text-base
+F e6c65aeeb8f7cefa2715ec85a6879a51f7de859d31a608c106e64c01254222ed 1337178343 25100 StepVector.py.svn-base
+F 3ee20253c0eaece1e5da00de8f1f4da971e7ab4965a169ee07cdd6762cd4b609 1337178344 1429 _HTSeq_internal.py.svn-base
+F f7da6bfbc272aec4b2da9ef42259228e1c2a4289f3fb7924f99f6cb3a9367345 1337178343 28377 __init__.py.svn-base
+F 309c12d8247b74c4b08e39c893fc85dfd66d775c69852a6e62b88739639a5d70 1337178340 24 _version.py.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/scripts
+F e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 1308733312 0 __init__.py
+F bd08979790ba45283d8c3f33d575c6f1dfca2f4d062986754f922885ad8995e8 1309354957 11534 count.py
+F db67f8316bfe28d00bcd1ccd2f64dc2be8540fb087d12aa0bd402d88e9d4f4f4 1308904828 7729 qa.py
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/scripts/.svn
+F d0b9c58a1891eb0fc8895ac581ff32c8424e7b48bc4fccf69960b6e8345bc7e9 1337178345 546 all-wcprops
+F 2ddd7264e07a91d57e3ec1cbdf16d715bc66abbaaf44a29f4f3f58efbcdb0899 1338909845 756 entries
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/scripts/.svn/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/scripts/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/scripts/.svn/text-base
+F e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 1337178340 0 __init__.py.svn-base
+F bd08979790ba45283d8c3f33d575c6f1dfca2f4d062986754f922885ad8995e8 1337178339 11534 count.py.svn-base
+F db67f8316bfe28d00bcd1ccd2f64dc2be8540fb087d12aa0bd402d88e9d4f4f4 1337178335 7729 qa.py.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/scripts/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/scripts/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/scripts/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq/scripts/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq.egg-info
+F a56f147e0eb2fa08b66160e9ee796a14d8100ff088e6517645691d28779b2d48 1336405351 710 PKG-INFO
+F 4c926e8828f64f8ffe1f7009936079ba6deda5dd52069d2e2821dd5ed020d1d8 1336405351 987 SOURCES.txt
+F 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b 1336405351 1 dependency_links.txt
+F 5b7638c374b16ca37a61ff13175257bd5b598a7ec5e9f2d0a7e98c0bdea6fa60 1336405351 6 top_level.txt
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq.egg-info/.svn
+F 6c867621aa3895a8b89d61cabb18bcfd7d4ead1e2d599a9648847bd4355cbf8f 1337178345 733 all-wcprops
+F 0f81c25dd06baee2948ab16f3660bfaed991119c649c480efcc48ce5132eaaf4 1338909845 938 entries
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq.egg-info/.svn/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq.egg-info/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq.egg-info/.svn/text-base
+F a56f147e0eb2fa08b66160e9ee796a14d8100ff088e6517645691d28779b2d48 1337178342 710 PKG-INFO.svn-base
+F 4c926e8828f64f8ffe1f7009936079ba6deda5dd52069d2e2821dd5ed020d1d8 1337178344 987 SOURCES.txt.svn-base
+F 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b 1337178343 1 dependency_links.txt.svn-base
+F 5b7638c374b16ca37a61ff13175257bd5b598a7ec5e9f2d0a7e98c0bdea6fa60 1337178336 6 top_level.txt.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq.egg-info/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq.egg-info/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq.egg-info/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/HTSeq.egg-info/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/bin
+X 25a5f92b38c16905a308f3a2755eaafcd90797b1a5a3d257f4ba80060d478736 1336405352 183 htseq-count
+X d7e258e87c31b6e278d578060608da4037589d276538765b1e886ab5ac131b38 1336405352 177 htseq-qa
+D /FeatureCounter/HTSeq-0.5.3p3/bin/.svn
+F 291dd6a5983ef0847785de648ec2279db79ce358785de376c57b73ceece5d0c7 1337178345 381 all-wcprops
+F cb4101d66a28eeff5aca8cc1f04091314e3f960b50a8ff160204dafeccc9710f 1338909845 600 entries
+D /FeatureCounter/HTSeq-0.5.3p3/bin/.svn/prop-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 htseq-count.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 htseq-qa.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/bin/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/bin/.svn/text-base
+F 25a5f92b38c16905a308f3a2755eaafcd90797b1a5a3d257f4ba80060d478736 1337178338 183 htseq-count.svn-base
+F d7e258e87c31b6e278d578060608da4037589d276538765b1e886ab5ac131b38 1337178344 177 htseq-qa.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/bin/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/bin/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/bin/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/bin/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/build
+D /FeatureCounter/HTSeq-0.5.3p3/build/lib.linux-x86_64-2.6
+D /FeatureCounter/HTSeq-0.5.3p3/build/lib.linux-x86_64-2.6/HTSeq
+X 4949d548b40a6c3dc9cd79405913e27f868be10623542b07d370e10292a6a4ab 1336405207 958270 _HTSeq.so
+X 131c8b073dc610be4c28f5afef7654d631fd962bda28455f382e69c34d1b976c 1336405210 487513 _StepVector.so
+D /FeatureCounter/HTSeq-0.5.3p3/build/temp.linux-x86_64-2.6
+D /FeatureCounter/HTSeq-0.5.3p3/build/temp.linux-x86_64-2.6/src
+F f374c10e3d7530c6e3b270fff4ce24b8015f837d6cf30c87d25f9a08bb712e7c 1336405209 979368 StepVector_wrap.o
+F 8ecd7d0aa1b9d09bea2428cd11dac32abcf4762a94e9fd30fdee4f581976774a 1336405207 1499952 _HTSeq.o
+D /FeatureCounter/HTSeq-0.5.3p3/dist
+F bc26513d309d7848df6efd693c95cfc1b025fbb996f1428a653d1ba8d819dec0 1336405351 510973 HTSeq-0.5.3p3-py2.6-linux-x86_64.egg
+D /FeatureCounter/HTSeq-0.5.3p3/dist/.svn
+F 6bec76f96fb774015c5aa8f2848401dd546f5da7f30a4ed574af142da0a1a294 1337178345 303 all-wcprops
+F 4429e89aab88116eddcfa8386bbb9467bedb6fb40852950ef6b048b7f0751381 1338909845 454 entries
+D /FeatureCounter/HTSeq-0.5.3p3/dist/.svn/prop-base
+F ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02 1337178305 53 HTSeq-0.5.3p3-py2.6-linux-x86_64.egg.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/dist/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/dist/.svn/text-base
+F bc26513d309d7848df6efd693c95cfc1b025fbb996f1428a653d1ba8d819dec0 1337178340 510973 HTSeq-0.5.3p3-py2.6-linux-x86_64.egg.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/dist/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/dist/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/dist/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/dist/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/doc
+F 765765978b42c11928fd9269ed57898e64fd8a886f3d689d660362e39cf8387a 1308733385 2668 Makefile
+F d11fd2c169cda7d1642d45d7a10729a6347e570782c625d4a93b4de7a35488e7 1308733385 1036 add_counter.py
+F 4537ba216bfc21e9c7f0adb6edf209428856678fa97f709c0a615c6bf9acb28e 1308733385 14709 alignments.rst
+F 487632ff63152346cc86f84234154ff9dc0053f68a36d4ce2b7827bb3260ce0c 1308733385 6245 conf.py
+F 874600286a56d87e1f8e08294a52ec406b7c673fe3997416cfe2af4ce7126093 1308733385 7960 contrib.rst
+F 50071600d25156db06bc47175c1c5718ff7a98deb30ce2a149791ff26728d8c5 1310737264 6122 count.rst
+F 59b6e0063c47bbb5b5f7018058603890d3341c7cb44100db7fe2c1119ed0fe8d 1308733385 12442 count_modes.odg
+F 39400fc5c3c567368abd4aae7c129bc40af9005cd212bd4d0481f8fb99076664 1308733385 26296 count_modes.png
+F 39c1099f8cf2be3728fd6121c66097da3ac7c8039d1bff09d2059d3f7a405f95 1308733385 11805 features.rst
+F bee8fbd55e40e18d64a0d66a524b58072425474fccf2ab0b88fbdb33f8c537a0 1308733385 15319 genomic.rst
+F b422eacd25243d7c829c06389b87d4bf54276f76391bc458c8283200a91ffaa5 1316091624 8485 history.rst
+F a9e1d3a8117dfd8e46f320660dace80340cb560bd9f38d4b96f76407aa2bc23c 1308733385 413 index.rst
+F 53b8696a70027721c0fd14fe917e6bcaaaba64a6b7ffa31cc1000bb2ac1b70f4 1308733385 4267 install.rst
+F e99bbc87629cea2cbd18fb95bfb465f52c98a1b5860d738a43d592d186da8aaa 1308733385 81 make_it
+F e138aa700c62624fdd90c242dd2cb6f038eba5468af727724813abb530dfb74a 1308733385 1489 misc.rst
+F 03e866b5e7596e5f884dc85e56ec6fedcd7569a42be865c208f14ec1081a2f21 1308733385 4330 overview.rst
+F 817ca4f0879ad69359b675782460a3c0e85cefaed9808a4c5ec7e74d3d5550b7 1308905348 3951 qa.rst
+F 08ef4246c6cb821251a3199128ad99be37200edb77673502e0efebbd4e661120 1308733385 92225 qa_example.png
+F 69c4721cadbc8e7b17f46c4d0c242c708d01813175ef758ac23d7314b3bcd9ed 1308733385 9868 qualplot.png
+F 2a146011f5fab4f5c929a8a3c8ba778072368fd1b2c733ff1cce896cb8c186b8 1316088502 13457 sequences.rst
+F e73faa8f84c04373cdf0c7a64dd32e545949d2f48b562415e897150eed06c4f6 1308733385 23415 tour.rst
+F feea4f75dc14776062114634bb618e5ac7b0b773cc321ece1addc67624d53cc3 1308733385 16022 tss.rst
+F c20207e0eb0d6d1db004a395d6eb7c49be7363dbf54eda8f4aaeefed7d0c51ce 1308733385 887 tss1.py
+F 4bcb438cc3b75904b4bc44bf3c17251606ba3142ca91977ab0bc7fa0647bbf90 1308733385 1208 tss2.py
+F a46cadef53c9ef1636f8b3948498c88d5f3992716f3e003fb4834dc42d9ba86e 1308733385 1263 tss3.py
+F de8d2a2e4f5b9bccd7723e16b2a8e4874b16a0b1787f1c6fa1519a2fb8fe4c4b 1308733385 18151 tss_fig1.png
+F 300070d943303a9aa072c12efa4cabffcd9191f0f85b4c9f5d1e4213b979b1d0 1308733385 38288 tss_fig2.png
+F 0a7b5f5f888c191f5d2d8ac4061e28b5dd7fce3cdeec548a2305fba755a2c4d0 1308733385 27282 tss_fig3.png
+F 6a91d05949535f203bc9b148aedea47ecad1f3dc4e9c33ff2f6a7549b6e4d848 1308733385 32782 tss_fig4.png
+D /FeatureCounter/HTSeq-0.5.3p3/doc/.svn
+F 568709529edadb90ae67475f69cc4275a28754b3e0fc3701956f84d9e72a621e 1337178345 4054 all-wcprops
+F e62001166d99057051bbdd3c00995b6751677bd627158af15ce3f93756ef2252 1338909845 5242 entries
+D /FeatureCounter/HTSeq-0.5.3p3/doc/.svn/prop-base
+F ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02 1337178305 53 count_modes.odg.svn-base
+F ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02 1337178304 53 count_modes.png.svn-base
+F ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02 1337178304 53 qa_example.png.svn-base
+F ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02 1337178305 53 qualplot.png.svn-base
+F ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02 1337178304 53 tss_fig1.png.svn-base
+F ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02 1337178304 53 tss_fig2.png.svn-base
+F ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02 1337178304 53 tss_fig3.png.svn-base
+F ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02 1337178304 53 tss_fig4.png.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/doc/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/doc/.svn/text-base
+F 765765978b42c11928fd9269ed57898e64fd8a886f3d689d660362e39cf8387a 1337178338 2668 Makefile.svn-base
+F d11fd2c169cda7d1642d45d7a10729a6347e570782c625d4a93b4de7a35488e7 1337178336 1036 add_counter.py.svn-base
+F 4537ba216bfc21e9c7f0adb6edf209428856678fa97f709c0a615c6bf9acb28e 1337178341 14709 alignments.rst.svn-base
+F 487632ff63152346cc86f84234154ff9dc0053f68a36d4ce2b7827bb3260ce0c 1337178338 6245 conf.py.svn-base
+F 874600286a56d87e1f8e08294a52ec406b7c673fe3997416cfe2af4ce7126093 1337178343 7960 contrib.rst.svn-base
+F 50071600d25156db06bc47175c1c5718ff7a98deb30ce2a149791ff26728d8c5 1337178335 6122 count.rst.svn-base
+F 59b6e0063c47bbb5b5f7018058603890d3341c7cb44100db7fe2c1119ed0fe8d 1337178337 12442 count_modes.odg.svn-base
+F 39400fc5c3c567368abd4aae7c129bc40af9005cd212bd4d0481f8fb99076664 1337178337 26296 count_modes.png.svn-base
+F 39c1099f8cf2be3728fd6121c66097da3ac7c8039d1bff09d2059d3f7a405f95 1337178339 11805 features.rst.svn-base
+F bee8fbd55e40e18d64a0d66a524b58072425474fccf2ab0b88fbdb33f8c537a0 1337178335 15319 genomic.rst.svn-base
+F b422eacd25243d7c829c06389b87d4bf54276f76391bc458c8283200a91ffaa5 1337178343 8485 history.rst.svn-base
+F a9e1d3a8117dfd8e46f320660dace80340cb560bd9f38d4b96f76407aa2bc23c 1337178339 413 index.rst.svn-base
+F 53b8696a70027721c0fd14fe917e6bcaaaba64a6b7ffa31cc1000bb2ac1b70f4 1337178344 4267 install.rst.svn-base
+F e99bbc87629cea2cbd18fb95bfb465f52c98a1b5860d738a43d592d186da8aaa 1337178336 81 make_it.svn-base
+F e138aa700c62624fdd90c242dd2cb6f038eba5468af727724813abb530dfb74a 1337178343 1489 misc.rst.svn-base
+F 03e866b5e7596e5f884dc85e56ec6fedcd7569a42be865c208f14ec1081a2f21 1337178336 4330 overview.rst.svn-base
+F 817ca4f0879ad69359b675782460a3c0e85cefaed9808a4c5ec7e74d3d5550b7 1337178338 3951 qa.rst.svn-base
+F 08ef4246c6cb821251a3199128ad99be37200edb77673502e0efebbd4e661120 1337178335 92225 qa_example.png.svn-base
+F 69c4721cadbc8e7b17f46c4d0c242c708d01813175ef758ac23d7314b3bcd9ed 1337178337 9868 qualplot.png.svn-base
+F 2a146011f5fab4f5c929a8a3c8ba778072368fd1b2c733ff1cce896cb8c186b8 1337178343 13457 sequences.rst.svn-base
+F e73faa8f84c04373cdf0c7a64dd32e545949d2f48b562415e897150eed06c4f6 1337178343 23415 tour.rst.svn-base
+F feea4f75dc14776062114634bb618e5ac7b0b773cc321ece1addc67624d53cc3 1337178344 16022 tss.rst.svn-base
+F c20207e0eb0d6d1db004a395d6eb7c49be7363dbf54eda8f4aaeefed7d0c51ce 1337178344 887 tss1.py.svn-base
+F 4bcb438cc3b75904b4bc44bf3c17251606ba3142ca91977ab0bc7fa0647bbf90 1337178342 1208 tss2.py.svn-base
+F a46cadef53c9ef1636f8b3948498c88d5f3992716f3e003fb4834dc42d9ba86e 1337178339 1263 tss3.py.svn-base
+F de8d2a2e4f5b9bccd7723e16b2a8e4874b16a0b1787f1c6fa1519a2fb8fe4c4b 1337178337 18151 tss_fig1.png.svn-base
+F 300070d943303a9aa072c12efa4cabffcd9191f0f85b4c9f5d1e4213b979b1d0 1337178338 38288 tss_fig2.png.svn-base
+F 0a7b5f5f888c191f5d2d8ac4061e28b5dd7fce3cdeec548a2305fba755a2c4d0 1337178338 27282 tss_fig3.png.svn-base
+F 6a91d05949535f203bc9b148aedea47ecad1f3dc4e9c33ff2f6a7549b6e4d848 1337178338 32782 tss_fig4.png.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/doc/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/doc/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/doc/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/doc/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib
+D /FeatureCounter/HTSeq-0.5.3p3/lib/.svn
+F 3cae968b36f70daa6defc3d83ad73510ec16cbf3650f2a0744a4f8b70c7c1ac6 1337178345 113 all-wcprops
+F 66cfa359866fc2e6a13a577a0e67d7c0f9d1368493164216d1e3b332740e19d4 1338909845 260 entries
+D /FeatureCounter/HTSeq-0.5.3p3/lib/.svn/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/.svn/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/lib/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python
+F 6429550cc7587c895bafc290caccf8aca9c5f2c67cd9204e6f502624123805ef 1336405352 224 easy-install.pth
+F e373d4cb1f844b41602d61a98d19711680ec9f9c6ea3c4436cb0d95968ce3424 1336405351 2362 site.py
+F 199a275225c1fb555659eb483596ac6c888950182cd75757a5092a98f59cd91d 1336405351 1825 site.pyc
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/.svn
+F 4be363278dd75f496c600cd201250033e104192df460375c1160ff42b1955bcb 1337178345 410 all-wcprops
+F c935cf6425b8613dad1b044218fd4a389ff2d9897bc84b764c7314b078847fba 1338909845 637 entries
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/.svn/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/.svn/text-base
+F 6429550cc7587c895bafc290caccf8aca9c5f2c67cd9204e6f502624123805ef 1337178344 224 easy-install.pth.svn-base
+F e373d4cb1f844b41602d61a98d19711680ec9f9c6ea3c4436cb0d95968ce3424 1337178336 2362 site.py.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/.svn
+F 7513652a94d86434a812ce008327db420aec061ce45336a9e0b9eabe86a8f667 1337178345 158 all-wcprops
+F adf71650e98097da3162301eaf5f48912aa7ddbafac313bfaa8f12a0324e8ecd 1338909845 318 entries
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/.svn/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/.svn/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO
+F a56f147e0eb2fa08b66160e9ee796a14d8100ff088e6517645691d28779b2d48 1336405351 710 PKG-INFO
+F 4c926e8828f64f8ffe1f7009936079ba6deda5dd52069d2e2821dd5ed020d1d8 1336405351 987 SOURCES.txt
+F 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b 1336405351 1 dependency_links.txt
+F d129c3490e73ef102ac54afc64e2ab9da00070e5436f2ea307617eea1a667b4d 1336405351 37 native_libs.txt
+F 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b 1336405351 1 not-zip-safe
+F 5b7638c374b16ca37a61ff13175257bd5b598a7ec5e9f2d0a7e98c0bdea6fa60 1336405351 6 top_level.txt
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/.svn
+F b4a9b9061c631e2e7f9eca8a27c70b165c468a8097c1c1b862af03311b243232 1337178345 1339 all-wcprops
+F 6497166f790ab2e090ab1638f0eec55103cf69e69bccbc862ce2510d5f933144 1338909845 1334 entries
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/.svn/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/.svn/text-base
+F a56f147e0eb2fa08b66160e9ee796a14d8100ff088e6517645691d28779b2d48 1337178342 710 PKG-INFO.svn-base
+F 4c926e8828f64f8ffe1f7009936079ba6deda5dd52069d2e2821dd5ed020d1d8 1337178338 987 SOURCES.txt.svn-base
+F 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b 1337178343 1 dependency_links.txt.svn-base
+F d129c3490e73ef102ac54afc64e2ab9da00070e5436f2ea307617eea1a667b4d 1337178335 37 native_libs.txt.svn-base
+F 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b 1337178337 1 not-zip-safe.svn-base
+F 5b7638c374b16ca37a61ff13175257bd5b598a7ec5e9f2d0a7e98c0bdea6fa60 1337178342 6 top_level.txt.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/scripts
+F 7cd9a83ba12dd4e790667ab1dcb13e1f9b9294a1ddedfcd5856edff501799dd7 1336405351 74 htseq-count
+F 9b639edc1119862f17fd02782c6a0c9aeb3d4bb21fe688ff6ca428f6ec7618a3 1336405351 68 htseq-qa
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/scripts/.svn
+F f4307fbdaaca30af92ce0c4f7ee887ea2dafa685d7d302e15f1805337889c7e1 1337178345 567 all-wcprops
+F f67b96a7c9eede2b0a771e8a1817bcb2dc22732d8eccab7c325656744266d585 1338909845 641 entries
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/scripts/.svn/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/scripts/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/scripts/.svn/text-base
+F 7cd9a83ba12dd4e790667ab1dcb13e1f9b9294a1ddedfcd5856edff501799dd7 1337178338 74 htseq-count.svn-base
+F 9b639edc1119862f17fd02782c6a0c9aeb3d4bb21fe688ff6ca428f6ec7618a3 1337178342 68 htseq-qa.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/scripts/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/scripts/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/scripts/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/EGG-INFO/scripts/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq
+X e6c65aeeb8f7cefa2715ec85a6879a51f7de859d31a608c106e64c01254222ed 1336405351 25100 StepVector.py
+F ad3afec21e337964a8297a695e4700a0eafc11f09f17917c7c1405e9f8bab203 1336405352 39785 StepVector.pyc
+X c062278f6df1674a19f21df767959ae5f0b251702e80c74565061e53da18c53d 1336405351 276 _HTSeq.py
+F c02d547bad85a7f6e14c8e58885a62bb97bcb45d4f4750e1514458bbd982177c 1336405352 672 _HTSeq.pyc
+X 4949d548b40a6c3dc9cd79405913e27f868be10623542b07d370e10292a6a4ab 1336405351 958270 _HTSeq.so
+X 3ee20253c0eaece1e5da00de8f1f4da971e7ab4965a169ee07cdd6762cd4b609 1336405351 1429 _HTSeq_internal.py
+F 6c140e2830996d7cc32e8f87c4ba958dcf6ed7c48883a7bd3c621d48c5843886 1336405352 2399 _HTSeq_internal.pyc
+X 3bc7a6cab0387a4ab12bbcf918d16c6267add208625a554c1e47051c0d99c9a1 1336405351 281 _StepVector.py
+F 26e69cb9a2a93efb2682fecf431e36de3c950f57cd15516a439977a674c595dd 1336405352 687 _StepVector.pyc
+X 131c8b073dc610be4c28f5afef7654d631fd962bda28455f382e69c34d1b976c 1336405352 487513 _StepVector.so
+X f7da6bfbc272aec4b2da9ef42259228e1c2a4289f3fb7924f99f6cb3a9367345 1336405351 28377 __init__.py
+F e1463e0aff430fe5e60fdf041bbd1353ce06df2e1164afabf74e295b34a0f7ec 1336405352 36304 __init__.pyc
+X 309c12d8247b74c4b08e39c893fc85dfd66d775c69852a6e62b88739639a5d70 1336405351 24 _version.py
+F ce55981e15eafd9137e3adb463e56d7c499903a38af9e8641fce9a5ff50a9fe5 1336405352 235 _version.pyc
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/.svn
+F 0a3e486004095d06d6a1e69ef9b5e43797662b2c5e3c0d6fdb201291cf4cafb2 1337178345 1312 all-wcprops
+F 27ba14072e6546c964ffb13143c5bc21bf1b538b1d3d773c70f555df5dbd9ba6 1338909845 1393 entries
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/.svn/prop-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 StepVector.py.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 _HTSeq.py.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 _HTSeq_internal.py.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 _StepVector.py.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 __init__.py.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 _version.py.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/.svn/text-base
+F e6c65aeeb8f7cefa2715ec85a6879a51f7de859d31a608c106e64c01254222ed 1337178337 25100 StepVector.py.svn-base
+F c062278f6df1674a19f21df767959ae5f0b251702e80c74565061e53da18c53d 1337178342 276 _HTSeq.py.svn-base
+F 3ee20253c0eaece1e5da00de8f1f4da971e7ab4965a169ee07cdd6762cd4b609 1337178341 1429 _HTSeq_internal.py.svn-base
+F 3bc7a6cab0387a4ab12bbcf918d16c6267add208625a554c1e47051c0d99c9a1 1337178342 281 _StepVector.py.svn-base
+F f7da6bfbc272aec4b2da9ef42259228e1c2a4289f3fb7924f99f6cb3a9367345 1337178342 28377 __init__.py.svn-base
+F 309c12d8247b74c4b08e39c893fc85dfd66d775c69852a6e62b88739639a5d70 1337178339 24 _version.py.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/scripts
+X e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 1336405352 0 __init__.py
+F c01d627bc5de20a5eea8236def8972f5595524363544c8fb52b062bca1c3f6fc 1336405352 209 __init__.pyc
+X bd08979790ba45283d8c3f33d575c6f1dfca2f4d062986754f922885ad8995e8 1336405352 11534 count.py
+F 5cafd707a93b19cdaf4d58dc011a68bc1e5972a1018237f75eda847f3f049397 1336405352 11879 count.pyc
+X db67f8316bfe28d00bcd1ccd2f64dc2be8540fb087d12aa0bd402d88e9d4f4f4 1336405352 7729 qa.py
+F 6b11607c6255aeaf0403e1e1b1679875148f61c19d34ed7606feb23b388a1fb4 1336405352 7906 qa.pyc
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/scripts/.svn
+F 9609f544525c27eeb9eb1984af80dc5c0c7a869988721285f4f9feb2b455cb43 1337178345 742 all-wcprops
+F 4e1ab4fdc7d326abf6f233c89fa58e592fda9aafc169ace14dbef285a2fd375f 1338909845 831 entries
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/scripts/.svn/prop-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 __init__.py.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 count.py.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 qa.py.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/scripts/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/scripts/.svn/text-base
+F e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 1337178339 0 __init__.py.svn-base
+F bd08979790ba45283d8c3f33d575c6f1dfca2f4d062986754f922885ad8995e8 1337178341 11534 count.py.svn-base
+F db67f8316bfe28d00bcd1ccd2f64dc2be8540fb087d12aa0bd402d88e9d4f4f4 1337178339 7729 qa.py.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/scripts/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/scripts/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/scripts/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/lib/python/HTSeq-0.5.3p3-py2.6-linux-x86_64.egg/HTSeq/scripts/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/scripts
+X 0d2557067f890b9f273567bd8c93591f0ec345e3033b15eb22d63593ee3a7fb2 1308733385 78 htseq-count
+X c535d5e88e1b9c05e46c959c938f70a39e62683c07c020f28b3e9ec0abf4df1e 1308733385 72 htseq-qa
+D /FeatureCounter/HTSeq-0.5.3p3/scripts/.svn
+F 1c4b9aeb1824293ad8031a862d4a9b5b0ef29aa6511e96a4107249c23972d981 1337178345 393 all-wcprops
+F 6e97913a19b7ad6981cdecd54d72e50b0b4d29e3e4c51118781e0d6ff953b99c 1338909845 602 entries
+D /FeatureCounter/HTSeq-0.5.3p3/scripts/.svn/prop-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 htseq-count.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178305 30 htseq-qa.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/scripts/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/scripts/.svn/text-base
+F 0d2557067f890b9f273567bd8c93591f0ec345e3033b15eb22d63593ee3a7fb2 1337178343 78 htseq-count.svn-base
+F c535d5e88e1b9c05e46c959c938f70a39e62683c07c020f28b3e9ec0abf4df1e 1337178335 72 htseq-qa.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/scripts/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/scripts/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/scripts/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/scripts/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/src
+F 4b33bf6c9997a28bb506ab9988ff9aab5d6049836c9bbbe9fab01d13e871ea88 1308733385 1822 AutoPyObjPtr.i
+F a07fa7bc080522d3202c68685db65c382ce989b8294322ee30abd9739e6dd48c 1308733385 397 Makefile
+F a8fc05b120a982b04228c5274f267ce113c8cd74ff0b4428b9ede8b215aa2164 1308733385 14105 StepVector.i
+F daadcb0922525996ad4a7731cf3ed8be175f068b85077ca8cd0fb880fde6c668 1308733479 210066 StepVector_wrap.cxx
+F 2ed4328bd10c2596cd819256be2e43ab730849a1ade5e9b4e32d7ff0acee480d 1316091485 1475277 _HTSeq.c
+F 8b8fdd1def7f87a10211f09d06594849a1f0b17b4f74c0d87dffc4431c1e44ea 1308733385 4905 step_vector.h
+D /FeatureCounter/HTSeq-0.5.3p3/src/.svn
+F 9a8c7704bcf61515303cedd0d1432bdf5df22c73768a557392269e8b63563f19 1337178345 951 all-wcprops
+F 6c4cdadc5b5f7b8ccc7947ec090286b8cd3bc6be14cc095e9d46c3432341cae7 1338909845 1292 entries
+D /FeatureCounter/HTSeq-0.5.3p3/src/.svn/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/src/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/src/.svn/text-base
+F 4b33bf6c9997a28bb506ab9988ff9aab5d6049836c9bbbe9fab01d13e871ea88 1337178341 1822 AutoPyObjPtr.i.svn-base
+F a07fa7bc080522d3202c68685db65c382ce989b8294322ee30abd9739e6dd48c 1337178337 397 Makefile.svn-base
+F a8fc05b120a982b04228c5274f267ce113c8cd74ff0b4428b9ede8b215aa2164 1337178338 14105 StepVector.i.svn-base
+F daadcb0922525996ad4a7731cf3ed8be175f068b85077ca8cd0fb880fde6c668 1337178336 210066 StepVector_wrap.cxx.svn-base
+F 2ed4328bd10c2596cd819256be2e43ab730849a1ade5e9b4e32d7ff0acee480d 1337178340 1475277 _HTSeq.c.svn-base
+F 8b8fdd1def7f87a10211f09d06594849a1f0b17b4f74c0d87dffc4431c1e44ea 1337178336 4905 step_vector.h.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/src/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/src/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/src/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/src/.svn/tmp/text-base
+D /FeatureCounter/HTSeq-0.5.3p3/src/HTSeq
+F f0fce458e75088f015233c175cd6adc37f0fba98e8b543e9ce3287b397bb3135 1308733385 2201 _HTSeq.pxd
+F b46b35e8141869a0c538e5160f4399ec0329d9d51c2a52e3b9632e1a94903126 1316088521 50152 _HTSeq.pyx
+F cd8cd0b02897ad371f2462b7a66e2e7877c9b3ffb08a18019b9c35d62142d33b 1308733385 185 __init__.py
+D /FeatureCounter/HTSeq-0.5.3p3/src/HTSeq/.svn
+F ea418c5fb52fe9689ec40999156ed9b8f4a0cc759be897382587d8202b5076e4 1337178345 544 all-wcprops
+F ef3f6fd91429e6cbfe3e006b1dccd82abc59bd70c6983d8c7ed411b18a5bc606 1338909845 761 entries
+D /FeatureCounter/HTSeq-0.5.3p3/src/HTSeq/.svn/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/src/HTSeq/.svn/props
+D /FeatureCounter/HTSeq-0.5.3p3/src/HTSeq/.svn/text-base
+F f0fce458e75088f015233c175cd6adc37f0fba98e8b543e9ce3287b397bb3135 1337178337 2201 _HTSeq.pxd.svn-base
+F b46b35e8141869a0c538e5160f4399ec0329d9d51c2a52e3b9632e1a94903126 1337178341 50152 _HTSeq.pyx.svn-base
+F cd8cd0b02897ad371f2462b7a66e2e7877c9b3ffb08a18019b9c35d62142d33b 1337178341 185 __init__.py.svn-base
+D /FeatureCounter/HTSeq-0.5.3p3/src/HTSeq/.svn/tmp
+D /FeatureCounter/HTSeq-0.5.3p3/src/HTSeq/.svn/tmp/prop-base
+D /FeatureCounter/HTSeq-0.5.3p3/src/HTSeq/.svn/tmp/props
+D /FeatureCounter/HTSeq-0.5.3p3/src/HTSeq/.svn/tmp/text-base
+D /FeatureCounter/documents
+F bc582b6342ef26f0f36966585067a7a3de5d2ca1cd3ae6af48386b37d9974103 1337109546 127365 FeatureCounter.pdf
+F 9741bdb8ca2cd507b66b8f84456ab2781ed1c38a04252a10c5d0bde1d082835e 1337110210 36243 image.png
+D /FeatureCounter/documents/.svn
+F 0f11d5a6213a721747e9e8d90e98344630b17b6f2dd63b899cc2b2c330dff8b4 1337178345 373 all-wcprops
+F d025d3059ff2698a60ef77247ddf8b4974c5061d45e0d46cf98d34558847a050 1338909845 605 entries
+D /FeatureCounter/documents/.svn/prop-base
+F ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02 1337178304 53 FeatureCounter.pdf.svn-base
+F ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02 1337178304 53 image.png.svn-base
+D /FeatureCounter/documents/.svn/props
+D /FeatureCounter/documents/.svn/text-base
+F bc582b6342ef26f0f36966585067a7a3de5d2ca1cd3ae6af48386b37d9974103 1337178341 127365 FeatureCounter.pdf.svn-base
+F 9741bdb8ca2cd507b66b8f84456ab2781ed1c38a04252a10c5d0bde1d082835e 1337178341 36243 image.png.svn-base
+D /FeatureCounter/documents/.svn/tmp
+D /FeatureCounter/documents/.svn/tmp/prop-base
+D /FeatureCounter/documents/.svn/tmp/props
+D /FeatureCounter/documents/.svn/tmp/text-base
+D /FeatureCounter/scripts
+X 1b783d306ca458be4064915704861d053edbc397b2cd91f55740daccd4847a05 1337028072 829 bed2gff.pl
+X 3f65105a5ed0a9edf9cd219efe6c5e430ca88890e8e65a0ca2df7cb62fb2bc26 1336748771 2361 grab_stats.pl
+X 64b8e0f7de1f2919d0ac60b52eaa987f173246a036e87c575eda601fe1ea567c 1336666020 2620 write_html.pl
+D /FeatureCounter/scripts/.svn
+F c4f3d73c607bd7b302d2a1281acf8dff09b4830b7e7f589a96a6c41e9303177c 1337178345 490 all-wcprops
+F 7efe08dc6ec3a458167030aa0796f9f167f6cb1dd14a3a33bb3adeab22c39f60 1338909845 776 entries
+D /FeatureCounter/scripts/.svn/prop-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178304 30 bed2gff.pl.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178304 30 grab_stats.pl.svn-base
+F 3e8f073fcf7755203556b16a23e0547bf7f235f8fae4da5d12bb2fd8d780e988 1337178304 30 write_html.pl.svn-base
+D /FeatureCounter/scripts/.svn/props
+D /FeatureCounter/scripts/.svn/text-base
+F 1b783d306ca458be4064915704861d053edbc397b2cd91f55740daccd4847a05 1337178338 829 bed2gff.pl.svn-base
+F 3f65105a5ed0a9edf9cd219efe6c5e430ca88890e8e65a0ca2df7cb62fb2bc26 1337178341 2361 grab_stats.pl.svn-base
+F 64b8e0f7de1f2919d0ac60b52eaa987f173246a036e87c575eda601fe1ea567c 1337178342 2620 write_html.pl.svn-base
+D /FeatureCounter/scripts/.svn/tmp
+D /FeatureCounter/scripts/.svn/tmp/prop-base
+D /FeatureCounter/scripts/.svn/tmp/props
+D /FeatureCounter/scripts/.svn/tmp/text-base

@@ -1,0 +1,42 @@
+<script type="text/javascript" src="/site_media/jquery/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="./js/sorttable.js"></script>
+<link type="text/css" href="/site_media/jquery/css/aristo/jquery-ui-1.8.7.custom.css" rel="stylesheet" />
+<link href="/site_media/jquery/js/tipTipX/jquery.tipTipX.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("table#metrics_tab tbody tr:odd").css("background-color", "#E1EFFA");
+        $("button#export").click(function() {
+        var datArr = new Array();
+        $("table#metrics_tab tr").each(function(index1) {
+            datArr[index1] = new Array();
+            $(this).children("td,th").each(function(index2) {
+	        var text = $(this).text();
+	        text = text.replace(/,/g,"").replace(/[^\w\s\d.]/,"");
+                datArr[index1][index2] = text;
+	    });
+        });
+        var datstr = "";
+        var len = datArr.length;
+        for( var i=0; i<len; ++i ) {
+            datstr += datArr[i].join(",");
+            datstr += "\n";
+        }
+        $("input#exportdata").val(datstr);
+        $("form#exportform").submit();
+        });
+    });
+</script>
+        
+<style type="text/css">
+    table {!important;border-collapse:collapse;margin:auto;table-layout:fixed}
+    tr.nobarcode td {color:#A00000}
+    th,td {!important;border:1px solid #bbbbbb;padding:5px;text-align:left; white-space:nowrap}
+    .thelp {cursor:help}
+</style>
+
+<style type:"text/css">
+    body { font-family: arial; }
+    a { font-family: arial; }
+    h3 { font-family: arial; }
+    table { font-size: 12px; font-family: arial; border-style: solid; border-collapse: collapse;}
+</style>

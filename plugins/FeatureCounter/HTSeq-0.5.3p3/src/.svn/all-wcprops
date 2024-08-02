@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/src
+END
+step_vector.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/src/step_vector.h
+END
+_HTSeq.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/src/_HTSeq.c
+END
+StepVector.i
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/src/StepVector.i
+END
+StepVector_wrap.cxx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/src/StepVector_wrap.cxx
+END
+AutoPyObjPtr.i
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/src/AutoPyObjPtr.i
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/src/Makefile
+END

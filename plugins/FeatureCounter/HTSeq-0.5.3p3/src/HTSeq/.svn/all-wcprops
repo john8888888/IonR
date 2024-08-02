@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/src/HTSeq
+END
+_HTSeq.pyx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/src/HTSeq/_HTSeq.pyx
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/src/HTSeq/__init__.py
+END
+_HTSeq.pxd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/src/HTSeq/_HTSeq.pxd
+END

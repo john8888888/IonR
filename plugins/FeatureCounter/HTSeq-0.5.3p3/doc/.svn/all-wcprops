@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc
+END
+tss.rst
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/tss.rst
+END
+tss1.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/tss1.py
+END
+tss2.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/tss2.py
+END
+tss3.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/tss3.py
+END
+qualplot.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/qualplot.png
+END
+features.rst
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/features.rst
+END
+count_modes.odg
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/count_modes.odg
+END
+genomic.rst
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/genomic.rst
+END
+count.rst
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/count.rst
+END
+qa_example.png
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/qa_example.png
+END
+tour.rst
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/tour.rst
+END
+misc.rst
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/misc.rst
+END
+count_modes.png
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/count_modes.png
+END
+sequences.rst
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/sequences.rst
+END
+tss_fig1.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/tss_fig1.png
+END
+tss_fig2.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/tss_fig2.png
+END
+tss_fig3.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/tss_fig3.png
+END
+tss_fig4.png
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/tss_fig4.png
+END
+contrib.rst
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/contrib.rst
+END
+history.rst
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/history.rst
+END
+alignments.rst
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/alignments.rst
+END
+qa.rst
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/qa.rst
+END
+make_it
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/make_it
+END
+conf.py
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/conf.py
+END
+install.rst
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/install.rst
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/Makefile
+END
+overview.rst
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/overview.rst
+END
+index.rst
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/index.rst
+END
+add_counter.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31347/TS/trunk/rndplugins/FeatureCounter/HTSeq-0.5.3p3/doc/add_counter.py
+END

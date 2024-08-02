@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/site_media/jquery/js/jquery-1.6.1.min.js"></script>
+        <script type="text/javascript" src="/site_media/jquery/js/jquery-ui-1.8.13.min.js"></script>
+		<script type="text/javascript" src="/site_media/jquery/js/tipTipX/jquery.tipTipX.js"></script>
+		<script type="text/javascript" src="./js/FixedColumns.js"></script>
+		<script type="text/javascript" src="./js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/site_media/stylesheet.css"/>
+        <link type="text/css" href="/site_media/jquery/css/aristo/jquery-ui-1.8.7.custom.css" rel="stylesheet" />
+        <link href="/site_media/jquery/js/tipTipX/jquery.tipTipX.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="/site_media/report.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="./css/demo_table.css" />
+		<link rel="stylesheet" type="text/css" href="./css/demo_table_jui.css" />
+		<link rel="stylesheet" type="text/css" href="./css/stylesheet.css" />
+		<script type="text/javascript">
+			$(function() {
+				$().tipTipDefaults({ delay : 0 });
+				$(".tip").tipTip({ position : "bottom" });
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$( "#accordion").accordion();
+			});
+		</script>
+    </head>
+	<body>
+        <div class="all all_width">
+            <div class="topbar">
+                <div class="logoholder">
+
+                </div>
+            </div>
+        </div>
+        <div id="inner">
+            <h1><center>Feature Counter Plugin</center></h1>
+            <div id="VariantSummary" class="report_block">
+                <h2>Feature Summary</h2>
+                <div>
+					<br/>
+					<table class="noheading">
+						<col width=40px/>
+						<col width=40px/>
+						<tr><td><span class='tip' title='Features'><span class='tippy'>Features</span></span></td><td colspan=1 align=center>Counts</td></tr>
+						<tr><td><span class='tip' title='Total mapped reads'><span class='tippy'>Total mapped reads</span></span></td><td colspan=1 align=center>#TOT_READS</td></tr>
+						<tr><td><span class='tip' title='Reads overlapping features'><span class='tippy'>Reads overlapping feature</span></span></td><td colspan=1 align=center>#READS_OVL</td></tr>
+						 <tr><td><span class='tip' title='Reads not overlapping any features'><span class='tippy'>Reads not overlapping any feature</span></span></td><td colspan=1 align=center>#READS_NOT_OVL</td></tr>
+						 <tr><td><span class='tip' title='Reads overlapping more than 1 feature'><span class='tippy'>Ambiguous reads</span></span></td><td colspan=1 align=center>#READS_AMB</td></tr>
+<!--						<tr><td><span class='tip' title='Too low aQual'><span class='tippy'>Reads with too low mapping QV</span></span></td><td colspan=1 align=center>#READS_LOWQ</td></tr> -->
+						<tr><td><span class='tip' title='Reads not aligned'><span class='tippy'>Number of reads not mapped</span></span></td><td colspan=1 align=center>#READS_NOTA</td></tr>
+<!--						
+						<tr><td><span class='tip' title='Alignment not unique'><span class='tippy'>Alignment not unique</span></span></td><td colspan=1 align=center>#READS_NOTU</td></tr> -->
+					</table>
+                </div>
+            </div>
+
+	    <div id="FileLinks" class="report_block">
+                <h2>File Links</h2>                
+		<br/>
+		<div id="accordion">
+                  <h3><a href="#">Counts file (txt)</a></h3>
+                  <div><p>
+		      <a href="#URL_ROOT1">
+			Click this link to download the counts file containing counts and RPKM scores (txt).
+		      </a><br/><br/>
+		  </p></div>
+                </div>
+            </div>
+	    
+	    <div id="About" class="report_block">                
+              <h2>About</h2>
+                <div style>
+					</br>
+					<b>The is a feature counter plugin. It uses HT-Seq count functionality to count reads that fall on a feature.</b>
+					</br>
+					<ul>
+					  <li>
+					    The Ion Torrent <i>Feature Counter</i> uses <a href="http://www-huber.embl.de/users/anders/HTSeq/doc/count.html">HT-Seq</a> . 
+					    <ul>
+					      <li>
+						Detailed documentation for htseq-count along with descriptions can be found <a href="http://www-huber.embl.de/users/anders/HTSeq/doc/count.html#usage">here</a>.
+					      </li>
+					    </ul>
+					  </li>
+					</ul>
+                </div>
+            </div> <!--  end of about-->
+            <!-- zebra stripe the tables -->
+	    <script type="text/javascript">
+				 
+			 $(document).ready(function(){
+
+			   $('h2').append('<a href="javascript:;" class="expandCollapseButton" title="Collapse Section"></a>');
+
+				$('.expandCollapseButton').toggle(function() {
+					if ( $(this).attr('title') == 'Collapse Section'){
+						$(this).css('background-position','right top');
+						$(this).attr('title','Expand Section');
+					}else{
+						$(this).css('background-position','left top');
+						$(this).attr('title','Collapse Section');
+					}
+				}, function() {
+					if ( $(this).attr('title') == 'Expand Section'){
+						$(this).css('background-position','left top');
+						$(this).attr('title','Collapse Section');
+					}else{
+						$(this).css('background-position','right top');
+						$(this).attr('title','Expand Section');
+					}
+				});
+				
+				$('.expandCollapseButton').click(function(event){
+					$(event.target).parent().parent().toggleClass('small');
+					$(event.target).parent().next().slideToggle();
+				});
+
+				$('#tf .expandCollapseButton').css('background-position','right top');$('#tf .expandCollapseButton').attr('title','Expand Section');$('#tf').parent().toggleClass('small');$('#tf').next().toggle();
+				//start overlay
+
+				$(".heading tbody tr").mouseover(
+						function(){
+							$(this).addClass("table_hover");
+							
+				}).mouseout(
+						function(){
+							$(this).removeClass("table_hover");
+				});
+
+				$(".noheading tbody tr").mouseover(
+						function(){
+							$(this).addClass("table_hover");
+							
+				}).mouseout(
+						function(){
+							$(this).removeClass("table_hover");
+				});
+				
+				$(".heading tr:odd").addClass("zebra");
+				$(".noheading tr:odd").addClass("zebra");
+
+				$('#datatable').dataTable( {
+					"aLengthMenu": [[8], [8]],
+					"sDom": '<"top"fl>rt<"bottom"ip><"spacer">', 
+					"sScrollX": "100%",
+					"sScrollXInner": "110%",
+					"bScrollCollapse": true,
+					"sPaginationType": "full_numbers"
+				} );		
+			});
+			 
+		  </script>
+
+
+          <div class="clear"></div>
+		</div>
+    </body>
+</html>

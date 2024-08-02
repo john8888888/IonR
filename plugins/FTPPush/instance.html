@@ -1,0 +1,185 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+
+  <!--java script for interacting with the RESTful API-->
+  <script type="text/javascript" src="/site_media/jquery/js/jquery-1.6.1.min.js"></script>
+
+  <!--page style-->
+  <style type='text/css'> 
+    #formwrap {
+     line-height: 2em;
+     background: #eef;
+     margin: 10px;
+     padding: 10px;
+     height: 130px;
+     text-align: center;
+    }
+
+    body {
+     font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+     font-size: 14px;
+    }
+  </style> 
+  
+  <script type='text/javascript'> 
+    //grab the global parameter value for input_text via the RESTful API
+    pluginGET = "";
+    $(document).ready(function(){
+     $.ajax({
+      url:"/rundb/api/v1/plugin/" + TB_plugin.pk + "?format=json",
+      dataType:"json",
+      type: "GET",
+      async: false,
+      success:function(data){
+       //get the plugin data
+       pluginGET = data;
+       
+       //delete the resource_uri
+       delete pluginGET.resource_uri;
+    
+       $.each(pluginGET.config, function(key,val){
+        //set the value of the html object ftp_server
+          if(key == "ftp_server"){
+           document.getElementById("ftp_server").value = val;
+          }
+
+          //set the vlaue of user_name
+          else if(key == "user_name"){
+           document.getElementById("user_name").value = val;
+          }
+
+          //set the vlaue of user_password
+          else if(key == "user_password"){
+           document.getElementById("user_password").value = val;
+          }
+
+          //set the vlaue of default path
+          else if(key == "default_path"){
+           document.getElementById("default_path").value = val;
+          }
+
+          //default files to transfer
+          else if(key == "sff"){
+           document.getElementById("sff").checked = true;
+          }
+
+          //default files to transfer
+          else if(key == "fastq"){
+           document.getElementById("fastq").checked = true;
+          }
+
+          //default files to transfer
+          else if(key == "bam"){
+           document.getElementById("bam").checked = true;
+          }
+       });
+      }
+     });
+    });
+
+    //process form to grab html objects and turn them into json objects 
+    $(function() {
+     $.fn.serializeObject = function(){
+      var o = {};
+      var a = this.serializeArray();
+      
+      $.each(a, function() {
+       if (o[this.name] != null) {
+        if (!o[this.name].push) {
+         o[this.name] = [o[this.name]];
+        }
+       
+        o[this.name].push(this.value || '');
+       } else if(this.name == "file") {
+       
+       o[this.name] = [this.value || ''];	
+      }	
+      else {
+       o[this.name] = this.value || '';
+      }
+     });
+ 
+     return o;
+    };
+
+    //use the RESTful API to post the json variable
+    $(function() {
+     $('#postbutton').click(function() {
+      if(document.getElementById("sff").checked == false && document.getElementById("fastq").checked == false && document.getElementById("bam").checked == false){
+         alert("Please select at least one file type to transfer");
+         return(false);
+        }
+
+        if(document.getElementById("ftp_server").value == ""){
+          alert("Please enter the FTP server address");
+          return(false);
+        }
+
+      if(document.getElementById("user_name").value == ""){
+          alert("Please enter the user name");
+          return(false);
+      }
+
+      if(document.getElementById("user_password").value == ""){
+          alert("Please enter the user password");
+          return(false);
+      }
+
+
+      //the name of the form used here, in this case "inputform" should match the one in the html code
+      obj =  $('#inputform').serializeObject();
+    
+      pluginAPIJSON = { "plugin" : [TB_plugin.fields.name], "pluginconfig" : obj };
+      pluginAPIJSON = JSON.stringify(pluginAPIJSON); 
+      pluginURL = "/rundb/api/v1/results/" + TB_result + "/plugin/";
+    
+      $.ajax({
+       type: 'POST',
+       url: pluginURL,
+       contentType: "application/json; charset=utf-8",
+       success: function(data) {
+        $("#json_result").html('<div style="text-align: center;"><img src="/site_media/jquery/colorbox/images/loading.gif" alt="Running Plugin" style="float:center"></img><p>Starting the Plugin...</p></div>');
+        setTimeout("parent.$.fn.colorbox.close()" ,2000); },
+        data: pluginAPIJSON,
+        dataType: "json"
+       });
+      });
+     })
+    });
+  </script> 
+</head> 
+
+<!--build the html page for what the user sees-->
+<body> 
+  <div>
+    <!-- the form name here, in this case "inputform" should match the one used in the put java script -->
+    <form id="inputform" align="center"> 
+      <h1> FTPPush Plugin Configuration</h1>
+        <table align="center">
+          <!-- input_text will become the json variable  -->
+          <tr><td>FTP Server: </td><td><input size="50" type="text" id="ftp_server" name="ftp_server" value=""/></td></tr>
+          <tr><td>User Name: </td><td><input size="50" type="text" id="user_name" name="user_name" value=""/></td></tr>
+          <tr><td>User Password: </td><td><input size="50" type="password" id="user_password" name="user_password" value=""/></td></tr>
+          <tr><td>Default Path: </td><td><input size="50" type="text" id="default_path" name="default_path" value=""/></td></tr>
+          <tr><td>Files To Transfer:</td><td>
+              <input type="checkbox" id="sff" name="sff" value="sff">SFF
+              <input type="checkbox" id="fastq" name="fastq" value="fastq">FASTQ
+              <input type="checkbox" id="bam" name="bam" value="bam">BAM
+          </td></tr>
+        </table><p>
+    </form> 
+
+    <center>
+      <input id="postbutton" type="submit" value="Submit"> <p>
+	<text size="-1"> To change default settings go to Torrent Browser > Config > Plugins > FTPPush (config link)</text>
+    </center>
+
+  </div>
+
+  
+
+  <div id="json_result"> </div>       
+</body> 
+</html> 
+ 
